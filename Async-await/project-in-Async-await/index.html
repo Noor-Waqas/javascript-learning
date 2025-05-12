@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Async Await</title>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 3rem;">Async Await</h1>
+   <div style="display: flex; justify-content: center; align-items: center;">
+    <button id="stop" class="buttonStyles">Stop</button>
+   </div>
+
+   <script>
+    const SayName = ()=>{
+        console.log("Waqas Ahamd");// referance   
+    }
+    // change Well Come Namre
+    const changeText = ()=>{
+    document.querySelector("h1").innerHTML="Best JavaScript Serious";
+    }
+    const changeMe =  setTimeout(changeText,20000)//api ko b call krta hai itna time do ek bar ap ka kam kr do ga ek bar bar bar nhi 
+
+    document.querySelector("#stop").addEventListener("click",()=>{
+        clearTimeout(changeMe)
+        console.log("Stop.............")
+    })
+   </script>
+</body>
+</html>
