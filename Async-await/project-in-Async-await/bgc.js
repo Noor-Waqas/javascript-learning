@@ -15,8 +15,8 @@ const startChangingColor = function(){
         const textColor = randomColor();
 
         document.body.style.backgroundColor = bgColor
-        let colorDisplay = document.querySelector("#colorChange")
 
+        let colorDisplay = document.querySelector("#colorChange")
         colorDisplay.style.color = textColor;
         colorDisplay.innerHTML = `Background: ${bgColor} | Text: ${textColor}`;
     }
