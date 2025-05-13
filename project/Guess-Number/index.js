@@ -59,7 +59,7 @@ function checkGuess(guess) {
 
 function displayGuess(guess) {
     userInput.value = "" // userValye ko clear krne k liye
-    guessSlot.innerHTML += `${guess}` // guess value add kr ty ja ay gy 
+    guessSlot.innerHTML += `${guess} ,` // guess value add kr ty ja ay gy 
     numGuss++;// add value to numGuss
     remaing.innerHTML = `${11 - numGuss} guesses left` // remaining guesses ko update krne k liye
 }
