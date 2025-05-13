@@ -21,12 +21,9 @@ const startChangingColor = function(){
         colorDisplay.innerHTML = `Background: ${bgColor} | Text: ${textColor}`;
     }
 
-
     if (!intervalId) {  //agr intervalId hai is nhi to
         intervalId = setInterval(changeBgColor, 2000);
     }
-
-   
 }
 
 // console.log(randomColor());
@@ -34,8 +31,6 @@ const startChangingColor = function(){
 document.querySelector("#start").addEventListener("click",()=>{
     startChangingColor()
 })
-
-
 
 const stopChangingColor = function(){
     clearInterval(intervalId)
