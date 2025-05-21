@@ -4,7 +4,7 @@ console.log("=========================> Call And This in javaScript  <==========
 
 function SetUsername (username){
     // complex DB Call
-this.username = username
+this.username = username // ye this used nhi hoga jo hum ny diya as a parameter wo use ho ga current contex 
 console.log("calling...........");
 
 }
