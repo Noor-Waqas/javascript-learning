@@ -1,0 +1,18 @@
+  body{
+    background-color: #313131;
+    color: #ffffff;
+  }
+  button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            padding: 20px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            }
+
+            button:hover {
+            background-color: #032905;
+            font-size: 24px;
+            }
